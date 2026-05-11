@@ -42,6 +42,7 @@ subplot(1,2,2); imshow(wiener_motion); title('Step 5b: Motion Wiener Restored (R
 sgtitle('Step 5: Grayscale (Left) vs Motion Wiener Restored (Right)');
 
 %% Step 6 - Edge Detection Comparison (before vs after sharpening)
+
 gray_sharp = rgb2gray(sharpened);
 edges_before = edge(gray, 'Sobel');
 edges_after  = edge(gray_sharp, 'Sobel');

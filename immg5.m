@@ -49,6 +49,7 @@ smoothDegree = 0.01;
 finalImage   = imbilatfilt(correctedImg, 'DegreeOfSmoothing', smoothDegree);
 
 %% --- Step 6: Show Input vs. Processed Image ---
+
 figure('Position', [100 100 1200 600]);
 subplot(1,2,1);
 imshow(inputImage);
